@@ -44,9 +44,3 @@ jobs:
         git config --global user.email "$EMAIL"
         git add .
         git commit -m "update log" -a
-    - name: Push log
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        force: true
-        branch: main
